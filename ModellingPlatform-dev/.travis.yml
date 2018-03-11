@@ -8,5 +8,9 @@ before_script:
   - bower install
 script: gulp
 notifications:
-  email: false
+  email:
+	  recipients:
+		  michael.fuchs@edu.fh-joanneum.at
+	  on_success: never
+	  on_failure: change
 after_script: NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage

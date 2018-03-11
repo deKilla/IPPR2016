@@ -25,4 +25,9 @@ script:
   - npm run build:prod
 
 notifications:
-  slack: akveo:q559HckfZMSyZRb803aiLcjH
+    email:
+  	  recipients:
+  		  michael.fuchs@edu.fh-joanneum.at
+  	  on_success: never
+  	  on_failure: change
+  #slack: akveo:q559HckfZMSyZRb803aiLcjH
