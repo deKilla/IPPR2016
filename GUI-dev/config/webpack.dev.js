@@ -29,6 +29,9 @@ const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
  *
  * See: http://webpack.github.io/docs/configuration.html#cli
  */
+
+process.traceDeprecation = true;
+
 module.exports = function (options) {
   return webpackMerge(commonConfig({env: ENV}), {
 
