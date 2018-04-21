@@ -2,7 +2,7 @@ import { NgModule }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
-import { ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/ngx-bootstrap';
 
 import { MyProcesses } from './myprocesses.component';
 import { routing }       from './myprocesses.routing';
